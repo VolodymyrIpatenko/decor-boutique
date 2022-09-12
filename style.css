@@ -1,0 +1,85 @@
+ul, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: tan;
+}
+.header-logo {
+  width: 80px;
+  height: 80px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 120px;
+  line-height: 25px;
+}
+.nav-list__link {
+  font-size: 11px;
+}
+
+.socials {
+  display: flex;
+  margin-left: auto;
+}
+
+.footer {
+  background-color: black;
+  padding: 30px;
+}
+
+.address__list-item {
+  color: white;
+}
+
+.address__list-mail {
+  color: white;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 50px;
+}
+.main-section__title {
+  display: flex;
+  text-align: center;
+}
+.main-section__description {
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+  line-height: 35px;
+  margin-bottom: 50px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */
