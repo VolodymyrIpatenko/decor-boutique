@@ -1,9 +1,23 @@
+@import "./mixin.scss";
 @import "./reset.scss";
 @import "./header.scss";
 @import "./footer.scss";
+@import "./contact.scss";
 @import "./decor.scss";
+@import "./rental.scss";
+
+
 
 
 *{
 	box-sizing: border-box;
+}
+.wrapper{
+	min-height:100vh;
+	display: flex;
+	flex-direction: column;
+}
+img{
+	display: block;
+	height: auto;	
 }

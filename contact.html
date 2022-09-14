@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Decor Boutique</title>
+    <title>Contact us</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -22,7 +22,7 @@
   </head>
   <body>
     <header class="header">
-      <img class="header-logo" src="./logo.svg" alt="" />
+      <a href="./index.html"><img class="header-logo" src="./logo.svg" alt="" /></a>
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-list__item">
@@ -32,7 +32,7 @@
             <a class="nav-list__link" href="./gallery.html">GALLERY</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="./contact.html">CONTACT US</a>
+            <a class="nav-list__link nav-list__link_current" href="">CONTACT US</a>
           </li>
         </ul>
       </nav>
@@ -51,19 +51,37 @@
     <div class="wrapper">
       <main class="main">
         <section class="main-section">
-          <h1 class="main-section__title">
-            WEDDING RENTALS AND MUCH <br />
-            MORE!
-          </h1>
-          <p class="main-section__description">
-            Decor Boutique is a small family business, specialized in providing rental backdrops
-            <br />
-            as well as fresh and dried floral items. We love to participate in local markets and
-            meeting new people. <br />
-            Seeing happy customers is especially rewarding. Browse the other pages on our website to
-            check out our rental collection and see what we are up to.
-          </p>
-          <img class="main-section__img" width="300" height="300" src="./main.jpg" alt="" />
+          <form class="form" action="/">
+            <h1 class="form__title">Registration</h1>
+            <div class="form-control">
+              <label class="form-control__label" for="username">Username</label>
+              <input
+                placeholder="Your name"
+                class="form-control__input"
+                id="username"
+                name="username"
+                type="text"
+              />
+              <div class="form-control__error user-name"></div>
+            </div>
+            <div class="form-control">
+              <label class="form-control__label" for="email">Email</label>
+              <input
+                placeholder="Email"
+                class="form-control__input"
+                id="email"
+                name="email"
+                type="text"
+              />
+              <div class="form-control__error user-email"></div>
+            </div>
+            <div class="form-control">
+              <span class="form-control__message">Message</span>
+              <textarea placeholder="Type your message" class="form-control__field"></textarea>
+              <div class="form-control__error form-control__error_message"></div>
+            </div>
+            <button class="form__submit-btn" type="submit">Submit</button>
+          </form>
         </section>
       </main>
       <footer class="footer">
@@ -79,5 +97,6 @@
         </address>
       </footer>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
