@@ -125,9 +125,8 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 150px;
   border-radius: 4px;
-  font-size: 12px;
   width: 400px;
   padding: 15px;
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
@@ -150,13 +149,14 @@ a {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
+  width: 300px;
 }
 .form-control__message {
   font-size: 20px;
   color: grey;
 }
 .form-control__field {
-  width: 300px;
+  width: 270px;
   height: 200px;
   padding: 10px;
   border: 2px solid black;
@@ -182,11 +182,24 @@ a {
   display: block;
   font-size: 18px;
   padding: 10px;
-  width: 300px;
+  width: 270px;
 }
 .form-control__input:focus {
   outline: none;
   border-color: #2196F3;
+}
+
+.checkmark {
+  display: none;
+  font-size: 35px;
+  font-weight: bold;
+  color: green;
+}
+
+.input-wrraper {
+  display: flex;
+  align-items: center;
+  max-width: 330px;
 }
 
 .main {
