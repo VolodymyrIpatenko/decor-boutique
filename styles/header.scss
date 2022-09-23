@@ -1,5 +1,6 @@
 .header{
 	display: flex;
+	justify-content:space-between;
 	align-items: center;
 	position: relative;
 	z-index: 1;
@@ -7,10 +8,15 @@
 	border-bottom:1px solid #ECECEC;
 	background: #FFFFFF;
 	@include desk(){
+		display: flex;
+	  align-items: center;
 		position: fixed;
 		top: 0;
 		width: 100%;
 		padding: 10px 100px;
+		&__mobile-menu{
+			display:none;
+		}
 	}
 	&-logo{
 		width: 80px;
@@ -22,10 +28,13 @@
 		margin-left: auto;
 	}
 	&-list{
+		display: none;
+		@include desk(){
 		display:flex;
 		flex-direction: column;
 		margin-left:120px;
 		line-height:25px;
+		}
 		&__link{
 			position: relative;
 			font-weight: 500;
@@ -69,8 +78,11 @@
 	}
 }
 .socials{
-	display: flex;
+	display:none;
+	@include desk(){
+  display: flex;
 	margin-left: auto;
+	}
 	@include desk(){
 		margin-left: 150px;
 	}
@@ -82,3 +94,34 @@
 		}
 	}
 }
+  .mobile-menu{
+		position: relative;
+		&_open{
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		}
+		&__icon{
+			@include desk(){
+				display: none;
+			}
+		}
+		&__close{
+			top: -40px;
+			right: 0;
+			position:absolute;
+			z-index: 1;
+			display:none;
+		}
+	&__list{
+		background-color: #2196F3;
+		padding: 15px;
+		text-align: center;
+		display: none;
+	}
+	&__link{
+		color:white;
+	}
+}
+

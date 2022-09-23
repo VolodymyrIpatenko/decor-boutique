@@ -44,7 +44,6 @@ const validateInputs = () => {
     displayMessage.innerText = '';
   }
 };
-
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
