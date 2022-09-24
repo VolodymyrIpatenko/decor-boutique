@@ -9,6 +9,8 @@ const displayEmail = document.querySelector('.user-email');
 const displayMessage = document.querySelector('.form-control__error_message');
 const checkmark = document.querySelector('.checkmark');
 const checkmarkEmail = document.querySelector('.checkmark_email');
+const submitBtn = document.querySelector('.form__submit-btn');
+submitBtn.disabled = true;
 
 const isValidEmail = (email) => {
   const re =
@@ -43,9 +45,22 @@ const validateInputs = () => {
     messageField.style.borderColor = 'green';
     displayMessage.innerText = '';
   }
+  if (username.value.length > 0 && messageField.value.length > 0 && displayEmail.innerText === '') {
+    submitBtn.disabled = false;
+  }
 };
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
 
+function submitData(e) {
+  e.preventDefault();
+  const data = new FormData(form);
+  data.append('messageField', messageField.value);
+
+  alert(JSON.stringify(Object.fromEntries([...data])));
+  form.reset();
+}
+form.addEventListener('input', (e) => {
+  e.preventDefault();
   validateInputs();
 });
+
+form.addEventListener('submit', submitData);
