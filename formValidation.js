@@ -24,6 +24,8 @@ const validateInputs = () => {
   const messageFieldValue = messageField.value.trim();
 
   if (usernameValue === '') {
+    username.style.borderColor = 'red';
+    checkmark.style.display = 'none';
     displayName.innerText = 'Name is required';
   } else if (usernameValue.length > 0) {
     displayName.innerText = '';
@@ -31,8 +33,12 @@ const validateInputs = () => {
     checkmark.style.display = 'block';
   }
   if (emailValue === '') {
+    email.style.borderColor = 'red';
+    checkmarkEmail.style.display = 'none';
     displayEmail.innerText = 'Write your email';
   } else if (!isValidEmail(emailValue)) {
+    email.style.borderColor = 'red';
+    checkmarkEmail.style.display = 'none';
     displayEmail.innerText = 'Provide a valid email address';
   } else {
     email.style.borderColor = 'green';
@@ -45,7 +51,7 @@ const validateInputs = () => {
     messageField.style.borderColor = 'green';
     displayMessage.innerText = '';
   }
-  if (username.value.length > 0 && messageField.value.length > 0 && displayEmail.innerText === '') {
+  if (usernameValue.length > 0 && messageFieldValue.length > 0 && displayEmail.innerText === '') {
     submitBtn.disabled = false;
   }
 };
@@ -53,10 +59,16 @@ const validateInputs = () => {
 function submitData(e) {
   e.preventDefault();
   const data = new FormData(form);
+  console.log(data);
   data.append('messageField', messageField.value);
 
   alert(JSON.stringify(Object.fromEntries([...data])));
   form.reset();
+  username.style.borderColor = '#f0f0f0';
+  email.style.borderColor = '#f0f0f0';
+  messageField.style.borderColor = '#f0f0f0';
+  checkmark.style.display = 'none';
+  checkmarkEmail.style.display = 'none';
 }
 form.addEventListener('input', (e) => {
   e.preventDefault();
