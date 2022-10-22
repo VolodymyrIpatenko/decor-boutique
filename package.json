@@ -1,0 +1,23 @@
+{
+  "name": "decor-boutique",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VolodymyrIpatenko/decor-boutique.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VolodymyrIpatenko/decor-boutique/issues"
+  },
+  "homepage": "https://github.com/VolodymyrIpatenko/decor-boutique#readme",
+  "dependencies": {
+    "typed.js": "^2.0.12"
+  }
+}

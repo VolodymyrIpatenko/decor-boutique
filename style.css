@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+.typed-cursor {
+  display: none;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
