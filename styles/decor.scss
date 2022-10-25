@@ -4,8 +4,10 @@
 		display: flex;
 		flex-direction:column;
 		align-items:center;
-		margin: auto;
 		padding: 50px;
+		@include desk(){
+			padding: 100px;
+		}
 		&__img{
 			@include desk(){
 			display: block;
@@ -15,9 +17,11 @@
 			}
 		}
 		&__title{
-			display: flex;
 			text-align: center;
-			margin-top:100px;
+			margin-top:50px;
+			@include desk(){
+				margin-top: 100px;
+			}
 		}
 		&__description{
 			display: flex;

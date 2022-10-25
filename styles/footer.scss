@@ -1,13 +1,10 @@
 .footer{
-	background-color:black;
-	padding: 30px;
-}
-.address__list{
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
-	color: white;
+	align-items: center;
+	background-color:#ccd0c3;
+	padding: 30px;
 }
-.address__list-mail{
-	color:white;
+.contacts-list__link{
+	color: #ffffff;
 }
