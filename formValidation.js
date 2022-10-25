@@ -4,8 +4,8 @@ const form = document.querySelector('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
 const messageField = document.querySelector('textarea');
-const displayName = document.querySelector('.user-name');
-const displayEmail = document.querySelector('.user-email');
+const displayNameError = document.querySelector('.user-name');
+const displayEmailError = document.querySelector('.user-email');
 const displayMessage = document.querySelector('.form-control__error_message');
 const checkmark = document.querySelector('.checkmark');
 const checkmarkEmail = document.querySelector('.checkmark_email');
@@ -26,23 +26,23 @@ const validateInputs = () => {
   if (usernameValue === '') {
     username.style.borderColor = 'red';
     checkmark.style.display = 'none';
-    displayName.innerText = 'Name is required';
+    displayNameError.innerText = 'Name is required';
   } else if (usernameValue.length > 0) {
-    displayName.innerText = '';
+    displayNameError.innerText = '';
     username.style.borderColor = 'green';
     checkmark.style.display = 'block';
   }
   if (emailValue === '') {
     email.style.borderColor = 'red';
     checkmarkEmail.style.display = 'none';
-    displayEmail.innerText = 'Write your email';
+    displayEmailError.innerText = 'Write your email';
   } else if (!isValidEmail(emailValue)) {
     email.style.borderColor = 'red';
     checkmarkEmail.style.display = 'none';
-    displayEmail.innerText = 'Provide a valid email address';
+    displayEmailError.innerText = 'Provide a valid email address';
   } else {
     email.style.borderColor = 'green';
-    displayEmail.innerText = '';
+    displayEmailError.innerText = '';
     checkmarkEmail.style.display = 'block';
   }
   if (messageFieldValue === '') {
@@ -51,7 +51,11 @@ const validateInputs = () => {
     messageField.style.borderColor = 'green';
     displayMessage.innerText = '';
   }
-  if (usernameValue.length > 0 && messageFieldValue.length > 0 && displayEmail.innerText === '') {
+  if (
+    usernameValue.length > 0 &&
+    messageFieldValue.length > 0 &&
+    displayEmailError.innerText === ''
+  ) {
     submitBtn.disabled = false;
   }
 };
