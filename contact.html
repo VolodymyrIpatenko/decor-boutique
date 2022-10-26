@@ -73,7 +73,7 @@
           <form class="form" action="/">
             <h1 class="form__title">Registration</h1>
             <div class="form-control">
-              <label class="form-control__label" for="username">Username</label>
+              <label class="form-control__label" for="username">Your Name</label>
               <div class="input-wrraper">
                 <input
                   placeholder="Your name"
@@ -102,7 +102,10 @@
             </div>
             <div class="form-control">
               <span class="form-control__message">Message</span>
-              <textarea placeholder="Type your message" class="form-control__field"></textarea>
+              <div class="input-wrraper">
+                <textarea placeholder="Type your message" class="form-control__field"></textarea>
+                <span class="checkmark checkmark_message">✓</span>
+              </div>
               <div class="form-control__error form-control__error_message"></div>
             </div>
             <button class="form__submit-btn" type="submit">Submit</button>

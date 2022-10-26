@@ -9,6 +9,7 @@ const displayEmailError = document.querySelector('.user-email');
 const displayMessage = document.querySelector('.form-control__error_message');
 const checkmark = document.querySelector('.checkmark');
 const checkmarkEmail = document.querySelector('.checkmark_email');
+const checkmarkMessage = document.querySelector('.checkmark_message');
 const submitBtn = document.querySelector('.form__submit-btn');
 submitBtn.disabled = true;
 
@@ -48,8 +49,8 @@ const validateInputs = () => {
   if (messageFieldValue === '') {
     displayMessage.innerText = 'Your message is important for us';
   } else if (messageFieldValue.length > 1) {
-    messageField.style.borderColor = 'green';
     displayMessage.innerText = '';
+    checkmarkMessage.style.display = 'block';
   }
   if (
     usernameValue.length > 0 &&
@@ -68,11 +69,13 @@ function submitData(e) {
 
   alert(JSON.stringify(Object.fromEntries([...data])));
   form.reset();
+
   username.style.borderColor = '#f0f0f0';
   email.style.borderColor = '#f0f0f0';
   messageField.style.borderColor = '#f0f0f0';
   checkmark.style.display = 'none';
   checkmarkEmail.style.display = 'none';
+  checkmarkMessage.style.display = 'none';
 }
 form.addEventListener('input', (e) => {
   e.preventDefault();

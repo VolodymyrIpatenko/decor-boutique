@@ -5,8 +5,7 @@
 	position: relative;
 	z-index: 1;
 	padding: 15px;
-	border-bottom:1px solid #ECECEC;
-	background: #ccd0c3;
+	background:$main-color;
 	@include desk(){
 		display: flex;
 		flex-direction: column;
@@ -38,9 +37,9 @@
 			font-size: 18px;
 			line-height: 22px;
 			letter-spacing: 0.02em;
-			color: black;
+			color: $second-main-color;
 			&_current{
-				color:#2196F3;
+				color:$hover-color;
 			}
 			&_current:after{
 			@include desk(){
@@ -52,7 +51,7 @@
       height: 3px;
       display: block;
       border-radius: 4px;
-      background-color: #2196F3;
+      background-color: $hover-color;
 			}
 		}
 		}
@@ -66,9 +65,9 @@
 				font-size: 15px;
 				line-height: 16px;
 				letter-spacing: 0.04em;
-				color: #212121;
+				color: $second-main-color;
 				&:is(:hover,:focus) {	
-					color:#2196F3;
+					color:$hover-color;
 				}
 			}
 		}
@@ -82,14 +81,14 @@
 	
 	&__icon{
 		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-		color:black;
+		color:$second-main-color;
 		&:is(:hover, :focus){
-			color:#2196F3;
+			color:$hover-color;
 		}
 	}
 }
 .site-logo{
 	font-size: 30px;
-	color:#ffffff;
+	color:$second-main-color;
 	font-family: "Vladimir Script";	
 }
