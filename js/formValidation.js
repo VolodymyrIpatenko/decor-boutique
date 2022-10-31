@@ -1,4 +1,5 @@
 // const { check } = require('prettier');
+import isOpen from './modal.js';
 
 const form = document.querySelector('form');
 const username = document.getElementById('username');
@@ -11,6 +12,7 @@ const checkmark = document.querySelector('.checkmark');
 const checkmarkEmail = document.querySelector('.checkmark_email');
 const checkmarkMessage = document.querySelector('.checkmark_message');
 const submitBtn = document.querySelector('.form__submit-btn');
+
 submitBtn.disabled = true;
 
 const isValidEmail = (email) => {
@@ -23,7 +25,6 @@ const validateInputs = () => {
   const usernameValue = username.value.trim();
   const emailValue = email.value.trim();
   const messageFieldValue = messageField.value.trim();
-
   if (usernameValue === '') {
     username.style.borderColor = 'red';
     checkmark.style.display = 'none';
@@ -48,7 +49,8 @@ const validateInputs = () => {
   }
   if (messageFieldValue === '') {
     displayMessage.innerText = 'Your message is important for us';
-  } else if (messageFieldValue.length > 1) {
+    checkmarkMessage.style.display = 'none';
+  } else if (messageFieldValue.length > 0) {
     displayMessage.innerText = '';
     checkmarkMessage.style.display = 'block';
   }
@@ -66,8 +68,6 @@ function submitData(e) {
   const data = new FormData(form);
   console.log(data);
   data.append('messageField', messageField.value);
-
-  alert(JSON.stringify(Object.fromEntries([...data])));
   form.reset();
 
   username.style.borderColor = '#f0f0f0';
@@ -83,3 +83,4 @@ form.addEventListener('input', (e) => {
 });
 
 form.addEventListener('submit', submitData);
+form.addEventListener('submit', isOpen);

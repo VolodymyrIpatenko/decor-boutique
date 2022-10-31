@@ -1,6 +1,7 @@
 .main{
 	flex-grow: 1;
 	&-section{
+		position: relative;
 		display: flex;
 		flex-direction:column;
 		align-items:center;

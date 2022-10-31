@@ -21,112 +21,123 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="header">
-      <a class="site-logo" href="./index.html">Decor Boutique</a>
-      <div class="nav-wrapper">
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="./rental.html">RENTAL COLLECTION</a>
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="./gallery.html">GALLERY</a>
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link nav-list__link_current" href="./contact.html">CONTACT US</a>
+    <div class="backdrop">
+      <header class="header">
+        <a class="site-logo" href="./index.html">Decor Boutique</a>
+        <div class="nav-wrapper">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="./rental.html">RENTAL COLLECTION</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="./gallery.html">GALLERY</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link nav-list__link_current" href="./contact.html"
+                  >CONTACT US</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul class="socials">
+            <li class="socials__item">
+              <a
+                class="socials__link"
+                target="_blank"
+                href="https://www.instagram.com/decorboutiquerental/"
+              >
+                <i class="socials__icon fa-brands fa-instagram"></i>
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="socials">
-          <li class="socials__item">
-            <a
-              class="socials__link"
-              target="_blank"
-              href="https://www.instagram.com/decorboutiquerental/"
-            >
-              <i class="socials__icon fa-brands fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
+        </div>
+        <div class="mobile-menu">
+          <i class="fa-solid fa-xmark mobile-menu__close"></i>
+          <i class="fa-solid fa-bars mobile-menu__icon"></i>
+          <ul class="mobile-menu__list">
+            <li><a class="mobile-menu__link" href="./rental.html">Rental Collection</a></li>
+            <li><a class="mobile-menu__link" href="./gallery.html">Gallery</a></li>
+            <li><a class="mobile-menu__link" href="./contact.html">Contact US</a></li>
+            <li>
+              <a
+                class="mobile-menu__link"
+                target="_blank"
+                href="https://www.instagram.com/decorboutiquerental/"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="wrapper">
+        <main class="main">
+          <section class="main-section">
+            <form class="form" action="/">
+              <h1 class="form__title">Registration</h1>
+              <div class="form-control">
+                <label class="form-control__label" for="username">Your Name</label>
+                <div class="input-wrraper">
+                  <input
+                    placeholder="Your name"
+                    class="form-control__input"
+                    id="username"
+                    name="username"
+                    type="text"
+                  />
+                  <span class="checkmark">✓</span>
+                </div>
+                <div class="form-control__error user-name"></div>
+              </div>
+              <div class="form-control">
+                <label class="form-control__label" for="email">Email</label>
+                <div class="input-wrraper">
+                  <input
+                    placeholder="Email"
+                    class="form-control__input"
+                    id="email"
+                    name="email"
+                    type="text"
+                  />
+                  <span class="checkmark checkmark_email">✓</span>
+                </div>
+                <div class="form-control__error user-email"></div>
+              </div>
+              <div class="form-control">
+                <span class="form-control__message">Message</span>
+                <div class="input-wrraper">
+                  <textarea placeholder="Type your message" class="form-control__field"></textarea>
+                  <span class="checkmark checkmark_message">✓</span>
+                </div>
+                <div class="form-control__error form-control__error_message"></div>
+              </div>
+              <button class="form__submit-btn" type="submit">Submit</button>
+            </form>
+            <div class="thankful-page">
+              <span class="thankful-page__close-btn"></span>
+              <p class="thankful-page__description">
+                Thank you for contacting us!!! You are awesome
+              </p>
+            </div>
+          </section>
+        </main>
+        <footer class="footer">
+          <a class="site-logo" href="./index.html">Decor Boutique</a>
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="mailto:decorboutique@gmail.com"
+                >decorboutique@gmail.com</a
+              >
+            </li>
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="tel:746358737979">123456789</a>
+            </li>
+          </ul>
+        </footer>
       </div>
-      <div class="mobile-menu">
-        <i class="fa-solid fa-xmark mobile-menu__close"></i>
-        <i class="fa-solid fa-bars mobile-menu__icon"></i>
-        <ul class="mobile-menu__list">
-          <li><a class="mobile-menu__link" href="./rental.html">Rental Collection</a></li>
-          <li><a class="mobile-menu__link" href="./gallery.html">Gallery</a></li>
-          <li><a class="mobile-menu__link" href="./contact.html">Contact US</a></li>
-          <li>
-            <a
-              class="mobile-menu__link"
-              target="_blank"
-              href="https://www.instagram.com/decorboutiquerental/"
-              >Instagram</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
-    <div class="wrapper">
-      <main class="main">
-        <section class="main-section">
-          <form class="form" action="/">
-            <h1 class="form__title">Registration</h1>
-            <div class="form-control">
-              <label class="form-control__label" for="username">Your Name</label>
-              <div class="input-wrraper">
-                <input
-                  placeholder="Your name"
-                  class="form-control__input"
-                  id="username"
-                  name="username"
-                  type="text"
-                />
-                <span class="checkmark">✓</span>
-              </div>
-              <div class="form-control__error user-name"></div>
-            </div>
-            <div class="form-control">
-              <label class="form-control__label" for="email">Email</label>
-              <div class="input-wrraper">
-                <input
-                  placeholder="Email"
-                  class="form-control__input"
-                  id="email"
-                  name="email"
-                  type="text"
-                />
-                <span class="checkmark checkmark_email">✓</span>
-              </div>
-              <div class="form-control__error user-email"></div>
-            </div>
-            <div class="form-control">
-              <span class="form-control__message">Message</span>
-              <div class="input-wrraper">
-                <textarea placeholder="Type your message" class="form-control__field"></textarea>
-                <span class="checkmark checkmark_message">✓</span>
-              </div>
-              <div class="form-control__error form-control__error_message"></div>
-            </div>
-            <button class="form__submit-btn" type="submit">Submit</button>
-          </form>
-        </section>
-      </main>
-      <footer class="footer">
-        <a class="site-logo" href="./index.html">Decor Boutique</a>
-        <ul class="contacts-list">
-          <li class="contacts-list__item">
-            <a class="contacts-list__link" href="mailto:decorboutique@gmail.com"
-              >decorboutique@gmail.com</a
-            >
-          </li>
-          <li class="contacts-list__item">
-            <a class="contacts-list__link" href="tel:746358737979">123456789</a>
-          </li>
-        </ul>
-      </footer>
     </div>
+    <script src="./js/modal.js" type="module"></script>
     <script src="./js/mobileMenu.js"></script>
-    <script src="./js/formValidation.js"></script>
+    <script src="./js/formValidation.js" type="module"></script>
   </body>
 </html>
