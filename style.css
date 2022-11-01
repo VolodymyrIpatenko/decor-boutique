@@ -1,8 +1,3 @@
-ul, p, h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-}
-
 ul {
   list-style: none;
 }
@@ -13,6 +8,12 @@ a {
 
 .typed-cursor {
   display: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -419,8 +420,9 @@ a {
   background-color: none;
 }
 
-* {
-  box-sizing: border-box;
+.gallery-collection {
+  display: grid;
+  gap: 20px;
 }
 
 .wrapper {
@@ -432,6 +434,7 @@ a {
 img {
   display: block;
   height: auto;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
