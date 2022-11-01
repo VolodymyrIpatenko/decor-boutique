@@ -209,6 +209,10 @@ a {
   max-width: 330px;
 }
 
+.active {
+  background-color: green;
+}
+
 .main {
   flex-grow: 1;
 }
@@ -385,10 +389,12 @@ a {
   position: absolute;
   right: 0;
   margin: 10px;
-  background: #ccd0c3;
+  background: #ffffff;
   color: black;
 }
 .thankful-page__close-btn:hover {
+  background: #2196F3;
+  color: #ffffff;
   cursor: pointer;
 }
 

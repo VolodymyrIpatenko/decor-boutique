@@ -60,6 +60,7 @@ const validateInputs = () => {
     displayEmailError.innerText === ''
   ) {
     submitBtn.disabled = false;
+    submitBtn.classList.add('active');
   }
 };
 
@@ -76,6 +77,7 @@ function submitData(e) {
   checkmark.style.display = 'none';
   checkmarkEmail.style.display = 'none';
   checkmarkMessage.style.display = 'none';
+  submitBtn.classList.remove('active');
 }
 form.addEventListener('input', (e) => {
   e.preventDefault();
