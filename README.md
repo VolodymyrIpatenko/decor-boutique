@@ -12,7 +12,7 @@ Layout supports mobile version up to 478 and desktop up to 1440 versions
 - [Sass (Scss)](https://sass-lang.com/)
 - [BEM methodology](https://en.bem.info/methodology/)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [TyppedJS](https://mattboldt.com/demos/typed-js/)
+- [Typped JS](https://mattboldt.com/demos/typed-js/)
 
 ### Author
 
