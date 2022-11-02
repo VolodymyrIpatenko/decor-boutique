@@ -114,9 +114,13 @@ a {
 }
 
 .site-logo {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 30px;
   color: #ffffff;
   font-family: "Vladimir Script";
+}
+.site-logo:hover {
+  color: #2196F3;
 }
 
 .footer {
@@ -150,7 +154,7 @@ a {
   border: none;
   cursor: pointer;
   background-color: #a5b6b8;
-  color: white;
+  color: #ffffff;
   font-size: 18px;
 }
 .form__title {
@@ -201,7 +205,7 @@ a {
   display: none;
   font-size: 35px;
   font-weight: bold;
-  color: green;
+  color: #32CD32;
 }
 
 .input-wrraper {
@@ -210,7 +214,7 @@ a {
 }
 
 .active {
-  background-color: green;
+  background-color: #32CD32;
 }
 
 .main {
@@ -333,7 +337,7 @@ a {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: black;
+  color: #000000;
 }
 
 .mobile-menu {
@@ -341,7 +345,7 @@ a {
 }
 .mobile-menu__close {
   display: none;
-  top: 5px;
+  top: -20px;
   right: 0;
   position: absolute;
   z-index: 1;
@@ -363,13 +367,13 @@ a {
   }
 }
 .mobile-menu__list {
-  background-color: #2196F3;
+  background-color: #ccd0c3;
   padding: 15px;
   text-align: center;
   display: none;
 }
 .mobile-menu__link {
-  color: white;
+  color: #ffffff;
 }
 
 .thankful-page {
@@ -384,13 +388,13 @@ a {
   place-content: center;
   width: 20px;
   height: 20px;
-  border: 2px solid black;
+  border: 2px solid #000000;
   border-radius: 50%;
   position: absolute;
   right: 0;
   margin: 10px;
   background: #ffffff;
-  color: black;
+  color: #000000;
 }
 .thankful-page__close-btn:hover {
   background: #2196F3;
@@ -408,9 +412,9 @@ a {
   transform: translate(-50%, -50%);
   height: 350px;
   width: 400px;
-  border: 2px solid black;
+  border: 2px solid #000000;
   border-radius: 5px;
-  background: linear-gradient(100deg, white, red);
+  background: #ccd0c3;
 }
 @media screen and (min-width: 1199px) {
   .is-open {

@@ -9,13 +9,13 @@
 		place-content: center;
 		width: 20px;
 		height: 20px;
-		border: 2px solid black;
+		border: 2px solid $black-color;
 		border-radius: 50%;
 		position: absolute;
 		right: 0;
 		margin: 10px;
 		background:$second-main-color;
-		color: black;
+		color: $black-color;
 		&:hover{
 			background: $hover-color;
 			color:$second-main-color;
@@ -33,9 +33,9 @@
   transform: translate(-50%, -50%);
 	height: 350px;
 	width:400px;
-	border: 2px solid black;
+	border: 2px solid $black-color;
 	border-radius:5px;
-	background:linear-gradient(100deg, white, red);
+	background:$main-color;
 
 	@include desk {
 	  width: 600px;

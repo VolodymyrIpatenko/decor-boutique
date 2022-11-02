@@ -60,7 +60,7 @@
 			flex-direction: row;
 			gap: 30px;
 			&__link{
-				transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+				transition: $transition;
 				font-weight: 700;
 				font-size: 15px;
 				line-height: 16px;
@@ -80,7 +80,7 @@
 	}
 	
 	&__icon{
-		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		transition: $transition;
 		color:$second-main-color;
 		&:is(:hover, :focus){
 			color:$hover-color;
@@ -88,7 +88,11 @@
 	}
 }
 .site-logo{
+	transition: $transition;
 	font-size: 30px;
 	color:$second-main-color;
 	font-family: "Vladimir Script";	
+	&:hover{
+		color:$hover-color;
+	}
 }
