@@ -1,4 +1,4 @@
-# Price Card Layout
+# Decor Boutique
 
 ### [Site link](https://volodymyripatenko.github.io/decor-boutique/)
 
