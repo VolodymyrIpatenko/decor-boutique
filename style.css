@@ -117,10 +117,7 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 30px;
   color: #ffffff;
-  font-family: "Vladimir Script";
-}
-.site-logo:hover {
-  color: #2196F3;
+  font-family: "Freestype Script";
 }
 
 .footer {
