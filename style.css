@@ -31,7 +31,6 @@ a {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    position: fixed;
     top: 0;
     width: 100%;
     padding: 30px;
@@ -130,88 +129,6 @@ a {
 
 .contacts-list__link {
   color: #ffffff;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 150px;
-  border-radius: 4px;
-  width: 400px;
-  padding: 15px;
-  background: #ccd0c3;
-}
-.form__submit-btn {
-  width: 150px;
-  height: 50px;
-  margin-top: 10px;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  background-color: #a5b6b8;
-  color: #ffffff;
-  font-size: 18px;
-}
-.form__title {
-  color: grey;
-}
-.form-control {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
-  width: 300px;
-}
-.form-control__message {
-  font-size: 20px;
-  color: grey;
-}
-.form-control__field {
-  width: 270px;
-  height: 200px;
-  padding: 10px;
-  border: 2px;
-  resize: none;
-  outline: none;
-  border-radius: 4px;
-  font-size: 18px;
-}
-.form-control__error {
-  color: #ff3860;
-  font-size: 18px;
-}
-.form-control__label {
-  font-size: 19px;
-  color: grey;
-}
-.form-control__input {
-  border: 3px solid #f0f0f0;
-  border-radius: 4px;
-  display: block;
-  font-size: 18px;
-  padding: 10px;
-  width: 270px;
-}
-.form-control__input:focus {
-  outline: none;
-  border-color: #2196F3;
-}
-
-.checkmark {
-  display: none;
-  font-size: 35px;
-  font-weight: bold;
-  color: #32CD32;
-}
-
-.input-wrraper {
-  display: flex;
-  max-width: 330px;
-}
-
-.active {
-  background-color: #32CD32;
 }
 
 .main {
@@ -371,60 +288,6 @@ a {
 }
 .mobile-menu__link {
   color: #ffffff;
-}
-
-.thankful-page {
-  display: none;
-}
-.thankful-page__description {
-  font-size: 30px;
-  text-align: center;
-}
-.thankful-page__close-btn {
-  display: grid;
-  place-content: center;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #000000;
-  border-radius: 50%;
-  position: absolute;
-  right: 0;
-  margin: 10px;
-  background: #ffffff;
-  color: #000000;
-}
-.thankful-page__close-btn:hover {
-  background: #2196F3;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.is-open {
-  display: grid;
-  place-content: center;
-  padding: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 350px;
-  width: 400px;
-  border: 2px solid #000000;
-  border-radius: 5px;
-  background: #ccd0c3;
-}
-@media screen and (min-width: 1199px) {
-  .is-open {
-    width: 600px;
-  }
-}
-
-.open {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.is-hidden {
-  background-color: none;
 }
 
 .gallery-collection {
