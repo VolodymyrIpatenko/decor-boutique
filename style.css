@@ -131,6 +131,36 @@ a {
   color: #ffffff;
 }
 
+.temporary-contacts {
+  min-height: 100vh;
+  padding: 30px;
+  text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .temporary-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .temporary-contacts {
+    display: grid;
+    place-content: center;
+    font-size: 30px;
+  }
+}
+
+.temp-email {
+  font-size: 50px;
+}
+@media screen and (max-width: 1199px) {
+  .temp-email {
+    font-size: 30px;
+  }
+}
+
 .main {
   flex-grow: 1;
 }
