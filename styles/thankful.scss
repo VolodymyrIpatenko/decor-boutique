@@ -1,52 +1,52 @@
-// .thankful-page{
-// 	display: none;
-// 	&__description{
-// 		font-size: 30px;
-// 		text-align: center;
-// 	}
-// 	&__close-btn{
-// 		display: grid;
-// 		place-content: center;
-// 		width: 20px;
-// 		height: 20px;
-// 		border: 2px solid $black-color;
-// 		border-radius: 50%;
-// 		position: absolute;
-// 		right: 0;
-// 		margin: 10px;
-// 		background:$second-main-color;
-// 		color: $black-color;
-// 		&:hover{
-// 			background: $hover-color;
-// 			color:$second-main-color;
-// 		cursor:pointer;
-// 	}
-// 	}
-// 	}
-// 	.is-open{
-// 	display: grid;
-// 	place-content:center;
-// 	padding: 10px;
-// 	position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-// 	height: 350px;
-// 	width:400px;
-// 	border: 2px solid $black-color;
-// 	border-radius:5px;
-// 	background:$main-color;
+.thankful-page{
+	display: none;
+	&__description{
+		font-size: 30px;
+		text-align: center;
+	}
+	&__close-btn{
+		display: grid;
+		place-content: center;
+		width: 20px;
+		height: 20px;
+		border: 2px solid $black-color;
+		border-radius: 50%;
+		position: absolute;
+		right: 0;
+		margin: 10px;
+		background:$second-main-color;
+		color: $black-color;
+		&:hover{
+			background: $hover-color;
+			color:$second-main-color;
+		cursor:pointer;
+	}
+	}
+	}
+	.is-open{
+	display: grid;
+	place-content:center;
+	padding: 10px;
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	height: 350px;
+	width:400px;
+	border: 2px solid $black-color;
+	border-radius:5px;
+	background:$main-color;
 
-// 	@include desk {
-// 	  width: 600px;
-// 		}
-// 	}
+	@include desk {
+	  width: 600px;
+		}
+	}
 
-// 	 	 .open{
-// 			background-color:rgba(0, 0, 0, 0.1);
-// 		 }
+	 	 .open{
+			background-color:rgba(0, 0, 0, 0.1);
+		 }
 	 
 
-// 	.is-hidden{
-// 		background-color: none;
-// 	}
+	.is-hidden{
+		background-color: none;
+	}
