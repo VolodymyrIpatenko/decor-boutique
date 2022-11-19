@@ -1,95 +1,95 @@
-.header{
-	display: flex;
-	justify-content:space-between;
-	align-items: center;
-	position: relative;
-	z-index: 1;
-	padding: 15px;
-	background:$main-color;
-	@include desk(){
-		display: flex;
-		flex-direction: column;
-		justify-content:center;
-		gap: 20px;
-		// position: fixed;
-		top: 0;
-		width: 100%;
-		padding: 30px;
-		&__mobile-menu{
-			display:none;
-		}
-	}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  padding: 15px;
+  background: $main-color;
+  @include desk() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    // position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 30px;
+    &__mobile-menu {
+      display: none;
+    }
+  }
 }
-.nav{
-	&-wrapper{
-		display: flex;
-		align-items: center;
-		gap: 50px;
-	}
-	&-list{
-		display: none;
-		@include desk(){
-			display:flex;
-		}
-		&__link{
-			position: relative;
-			font-weight: 500;
-			font-size: 18px;
-			line-height: 22px;
-			letter-spacing: 0.02em;
-			color: $second-main-color;
-			&_current{
-				color:$hover-color;
-			}
-			&_current:after{
-				@include desk(){
-					content: '';
-					position: absolute;
-					left: 0;
-					bottom: -52px;
-					width: 100%;
-					height: 3px;
-					display: block;
-					border-radius: 4px;
-					background-color: $hover-color;
-				}
-			}
-		}
-		@include desk(){
-			display: flex;
-			flex-direction: row;
-			gap: 30px;
-			&__link{
-				transition: $transition;
-				font-weight: 700;
-				font-size: 15px;
-				line-height: 16px;
-				letter-spacing: 0.04em;
-				color: $second-main-color;
-				&:is(:hover,:focus) {	
-					color:$hover-color;
-				}
-			}
-		}
-	}
+.nav {
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  &-list {
+    display: none;
+    @include desk() {
+      display: flex;
+    }
+    &__link {
+      position: relative;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      color: $second-main-color;
+      &_current {
+        color: $hover-color;
+      }
+      &_current:after {
+        @include desk() {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -52px;
+          width: 100%;
+          height: 3px;
+          display: block;
+          border-radius: 4px;
+          background-color: $hover-color;
+        }
+      }
+    }
+    @include desk() {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      &__link {
+        transition: $transition;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 16px;
+        letter-spacing: 0.04em;
+        color: $second-main-color;
+        &:is(:hover, :focus) {
+          color: $hover-color;
+        }
+      }
+    }
+  }
 }
-.socials{
-	display:none;
-	@include desk(){
-		display: block;
-	}
-	
-	&__icon{
-		transition: $transition;
-		color:$second-main-color;
-		&:is(:hover, :focus){
-			color:$hover-color;
-		}
-	}
+.socials {
+  display: none;
+  @include desk() {
+    display: block;
+  }
+
+  &__icon {
+    transition: $transition;
+    color: $second-main-color;
+    &:is(:hover, :focus) {
+      color: $hover-color;
+    }
+  }
 }
-.site-logo{
-	transition: $transition;
-	font-size: 30px;
-	color:$second-main-color;
-	font-family: "Freestype Script";
+.site-logo {
+  transition: $transition;
+  font-size: 30px;
+  color: $second-main-color;
+  font-family: 'Freestype Script';
 }
