@@ -1,14 +1,14 @@
  .main-section{
 	&__title{
-	margin-bottom: 20px;
+		margin-bottom: 20px;
 	}
 	&__description{
 		font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+		line-height: 2;
+		letter-spacing: 0.06em;
 		font-style:italic;
-     }
 	}
+}
 
 .rental-collection{
 	margin-top:50px;
@@ -29,8 +29,8 @@
 	}
 	&__img{
 		@include desk(){
-    width: 400px;
-		height: 500px;
+			width: 400px;
+			height: 500px;
 		}
 	}
 	&__animation{
@@ -69,9 +69,9 @@
 			display: none;
 		}
 		font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
-    color: #757575;
+		line-height: 1.9;
+		letter-spacing: 0.03em;
+		color: #757575;
 	}
 	&__heading {
 		font-size: 18px;

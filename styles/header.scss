@@ -9,7 +9,7 @@
 	@include desk(){
 		display: flex;
 		flex-direction: column;
-	  justify-content:center;
+		justify-content:center;
 		gap: 20px;
 		// position: fixed;
 		top: 0;
@@ -29,7 +29,7 @@
 	&-list{
 		display: none;
 		@include desk(){
-		display:flex;
+			display:flex;
 		}
 		&__link{
 			position: relative;
@@ -42,18 +42,18 @@
 				color:$hover-color;
 			}
 			&_current:after{
-			@include desk(){
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -52px;
-      width: 100%;
-      height: 3px;
-      display: block;
-      border-radius: 4px;
-      background-color: $hover-color;
+				@include desk(){
+					content: '';
+					position: absolute;
+					left: 0;
+					bottom: -52px;
+					width: 100%;
+					height: 3px;
+					display: block;
+					border-radius: 4px;
+					background-color: $hover-color;
+				}
 			}
-		}
 		}
 		@include desk(){
 			display: flex;
@@ -76,7 +76,7 @@
 .socials{
 	display:none;
 	@include desk(){
-  display: block;
+		display: block;
 	}
 	
 	&__icon{
