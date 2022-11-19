@@ -1,5 +1,5 @@
-@mixin desk(){
-	@media screen and (min-width:1199px){
-		@content
-	}
+@mixin desk() {
+  @media screen and (min-width: 1199px) {
+    @content;
+  }
 }

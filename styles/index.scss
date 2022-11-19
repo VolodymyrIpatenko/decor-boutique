@@ -1,25 +1,22 @@
-@import "./variables.scss";
-@import "./mixin.scss";
-@import "./reset.scss";
-@import "./header.scss";
-@import "./footer.scss";
-@import "./contact.scss";
-@import "./decor.scss";
-@import "./rental.scss";
-@import "./mobile-menu.scss";
-@import "./thankful.scss";
-@import "./gallery.scss";
+@import './variables.scss';
+@import './mixin.scss';
+@import './reset.scss';
+@import './header.scss';
+@import './footer.scss';
+@import './contact.scss';
+@import './decor.scss';
+@import './rental.scss';
+@import './mobile-menu.scss';
+@import './thankful.scss';
+@import './gallery.scss';
 
-
-
-
-.wrapper{
-	min-height:100vh;
-	display: flex;
-	flex-direction: column;
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-img{
-	display: block;
-	height: auto;	
-	max-width: 100%;
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
