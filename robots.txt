@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap:https://www.decor-boutique.ca/sitemap.xml

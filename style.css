@@ -62,7 +62,7 @@ a {
   color: #ffffff;
 }
 .nav-list__link_current {
-  color: #2196F3;
+  color: #2196f3;
 }
 @media screen and (min-width: 1199px) {
   .nav-list__link_current:after {
@@ -74,7 +74,7 @@ a {
     height: 3px;
     display: block;
     border-radius: 4px;
-    background-color: #2196F3;
+    background-color: #2196f3;
   }
 }
 @media screen and (min-width: 1199px) {
@@ -92,7 +92,7 @@ a {
     color: #ffffff;
   }
   .nav-list__link:is(:hover, :focus) {
-    color: #2196F3;
+    color: #2196f3;
   }
 }
 
@@ -109,7 +109,7 @@ a {
   color: #ffffff;
 }
 .socials__icon:is(:hover, :focus) {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .site-logo {
@@ -194,14 +194,14 @@ a {
 }
 .form-control__input:focus {
   outline: none;
-  border-color: #2196F3;
+  border-color: #2196f3;
 }
 
 .checkmark {
   display: none;
   font-size: 35px;
   font-weight: bold;
-  color: #32CD32;
+  color: #32cd32;
 }
 
 .input-wrraper {
@@ -210,7 +210,7 @@ a {
 }
 
 .active {
-  background-color: #32CD32;
+  background-color: #32cd32;
 }
 
 .main {
@@ -393,7 +393,7 @@ a {
   color: #000000;
 }
 .thankful-page__close-btn:hover {
-  background: #2196F3;
+  background: #2196f3;
   color: #ffffff;
   cursor: pointer;
 }
